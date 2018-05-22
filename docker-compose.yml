@@ -10,6 +10,7 @@ services:
     environment:
       DB: mongodb://mongo:27017/trlogs?w=1
     depends_on:
+      # i need make sure mongo is ready to accept connections before starting node. healthcheck?
       - mongo
 
   mongo:
