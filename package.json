@@ -1,0 +1,21 @@
+{
+  "name": "kraken",
+  "version": "1.0.0",
+  "description": "Kraken Test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "Kraken"
+  ],
+  "author": "Mykhailo Lieibenson",
+  "license": "MIT",
+  "dependencies": {
+    "decimal.js": "^10.0.0",
+    "dotenv": "^5.0.1",
+    "mongodb": "^3.1.0-beta4",
+    "npm": "^6.0.1"
+  }
+}
