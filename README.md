@@ -1,6 +1,6 @@
-# Kraken Crypto/Payments Hiring Test
+# Krnkn
 
-At Kraken, we receive thousands of deposits from customers per day. This test is designed to test your ability to work with a transaction set that could get returned by a blockchain daemon like bitcoind.
+We receive thousands of deposits from customers per day returned by a blockchain daemon like bitcoind.
 
 The data we work with in this scenario comes from bitcoind’s rpc call `listsinceblock`. A frequently used approach to detect incoming deposits is to periodically call `listsinceblock` and process the returned data. This test contains 2 json files that represent the data from 2 separate calls to this endpoint. Your task is to write code that processes those files and detects all valid incoming deposits.
 
@@ -21,7 +21,7 @@ Known customer addresses are:
 
 ## Requirements
 
-Build a dockerized Node.js application to process the two transaction sets. 
+Build a dockerized Node.js application to process the two transaction sets.
 
 If you're not comfortable with Node.js, feel free to use the language of your choice.
 
@@ -44,7 +44,7 @@ The command `docker-compose up` **MUST**:
     ```
 
     The numbers in lines 1 - 7 **MUST** contain the count of valid deposits and their sum for the respective customer.
-    
+
     The numbers in line 8 **MUST** be the count and the sum of the valid deposits to addresses that are not associated with a known customer.
 
     **Note**: We'll match for these 10 lines with regular expressions. Please stick to this exact template, otherwise it won't be detected.
